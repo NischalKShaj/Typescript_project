@@ -27,5 +27,29 @@ class Area {
   }
 }
 
-class MyClass extends Area {}
+class MyClass extends Area {
+  main(): void {
+    console.log(
+      "Enter your choice : \n1.Area of circle \n2.Area of square \n3.Area of rectangle \n4.Area of triangle"
+    );
+    let choice = parseInt(prompt(""));
+    switch (choice) {
+      case 1:
+        this.circle();
+        break;
+      case 2:
+        this.square();
+        break;
+      case 3:
+        this.rectangle();
+        break;
+      case 4:
+        this.triangle();
+        break;
+      default:
+        console.log("Invalid choice ...");
+    }
+  }
+}
 const area = new MyClass();
+area.main();

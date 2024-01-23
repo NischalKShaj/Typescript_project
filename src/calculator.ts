@@ -39,7 +39,8 @@ class Calculator {
 const calculator = new Calculator();
 const num1 = parseFloat(prompt("Enter the first number : "));
 const num2 = parseFloat(prompt("Enter the second number : "));
-const operation = parseInt(
-  prompt("Select an operation:\n1. add\n2. sub\n3. mult\n4. div\n")
+console.log(
+  "Enter the operation \n1.Addition \n2.Subtraction \n3.Multiplication \n4.Division"
 );
+const operation = parseInt(prompt(""));
 calculator.calculate(num1, num2, operation);
